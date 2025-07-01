@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Cars | Premium Automotive Excellence</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-600">GP CARS</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-slate-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#models" class="text-slate-700 hover:text-blue-600 transition-colors">Models</a>
+                    <a href="#performance" class="text-slate-700 hover:text-blue-600 transition-colors">Performance</a>
+                    <a href="#about" class="text-slate-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#contact" class="text-slate-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-slate-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="hero-content" data-animate="fade-up">
+                    <h1 class="text-5xl md:text-6xl font-bold text-slate-800 leading-tight mb-6">
+                        Redefining <span class="text-blue-600">Automotive</span> Excellence
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 max-w-lg">
+                        Experience the pinnacle of automotive engineering with GP Cars' latest lineup of high-performance vehicles.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            Explore Models
+                        </button>
+                        <button class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition-colors">
+                            Book a Test Drive
+                        </button>
+                    </div>
+                </div>
+                <div data-animate="fade-right">
+                    <div class="car-image relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cffd2f1a-ba1a-49f6-aa23-9b82e4d68251.png" alt="Premium silver GP hypercar on mountain road at sunset" class="w-full h-auto rounded-lg" />
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-600 rounded-full opacity-20"></div>
+                        <div class="absolute -top-6 -left-6 w-24 h-24 bg-red-600 rounded-full opacity-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Models Section -->
+    <section id="models" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-animate="fade-up">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Our Flagship Models</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    The GP collection represents the perfect fusion of performance, luxury, and cutting-edge technology
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="model-card bg-white rounded-xl p-6" data-animate="fade-up">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cad3368a-d11f-4410-9538-1d5022aa2782.png" alt="GP Venom hypercar in electric blue with aerodynamic design" class="w-full h-auto transition-transform duration-500 hover:scale-105" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">GP Venom</h3>
+                    <p class="text-slate-600 mb-4">Our fastest production car yet with groundbreaking aerodynamics</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <div class="model-card bg-white rounded-xl p-6" data-animate="fade-up">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1df15cf2-b914-4655-a18a-424b93e90830.png" alt="GP Titan luxury sedan in deep black with chrome accents" class="w-full h-auto transition-transform duration-500 hover:scale-105" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">GP Titan</h3>
+                    <p class="text-slate-600 mb-4">Executive luxury meets exhilarating performance</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <div class="model-card bg-white rounded-xl p-6" data-animate="fade-up">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/23b94944-2375-4569-818e-002ed357d8ad.png" alt="GP Nova electric SUV in matte gray with futuristic lighting" class="w-full h-auto transition-transform duration-500 hover:scale-105" />
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-2">GP Nova</h3>
+                    <p class="text-slate-600 mb-4">Sustainable electric performance without compromise</p>
+                    <button class="text-blue-600 font-medium hover:text-blue-800 transition-colors">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Stats Section -->
+    <section id="performance" class="py-20 bg-gradient-to-r from-blue-900 to-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-animate="fade-up">
+                <h2 class="text-4xl font-bold mb-4">Performance That Inspires</h2>
+                <p class="text-lg opacity-80 max-w-2xl mx-auto">
+                    Numbers that tell the story of relentless innovation and engineering excellence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="stats-card rounded-lg p-8 text-center border border-white border-opacity-10" data-animate="fade-up">
+                    <div class="text-5xl font-bold mb-2">
+                        <span class="counter" data-target="1200">0</span>+
+                    </div>
+                    <div class="text-lg opacity-80">HP</div>
+                </div>
+                
+                <div class="stats-card rounded-lg p-8 text-center border border-white border-opacity-10" data-animate="fade-up" data-delay="100">
+                    <div class="text-5xl font-bold mb-2">
+                        <span class="counter" data-target="2.4">0</span>s
+                    </div>
+                    <div class="text-lg opacity-80">0-60 mph</div>
+                </div>
+                
+                <div class="stats-card rounded-lg p-8 text-center border border-white border-opacity-10" data-animate="fade-up" data-delay="200">
+                    <div class="text-5xl font-bold mb-2">
+                        <span class="counter" data-target="220">0</span>+
+                    </div>
+                    <div class="text-lg opacity-80">Top Speed (mph)</div>
+                </div>
+                
+                <div class="stats-card rounded-lg p-8 text-center border border-white border-opacity-10" data-animate="fade-up" data-delay="300">
+                    <div class="text-5xl font-bold mb-2">
+                        <span class="counter" data-target="98">0</span>%
+                    </div>
+                    <div class="text-lg opacity-80">Customer Satisfaction</div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center" data-animate="fade-up">
+                <button class="bg-white text-blue-900 hover:bg-opacity-90 px-8 py-3 rounded-full font-medium transition-colors">
+                    Explore Performance Specs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-animate="fade-left">
+                    <div class="relative">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/56668657-c398-4812-a846-97cca91f9737.png" alt="High-tech GP Cars manufacturing facility with robots assembling vehicles" class="w-full h-auto rounded-lg shadow-xl" />
+                    </div>
+                </div>
+                <div data-animate="fade-right">
+                    <h2 class="text-4xl font-bold text-slate-800 mb-6">The GP Legacy</h2>
+                    <p class="text-lg text-slate-600 mb-4">
+                        Founded in 1965, GP Cars has been pushing the boundaries of automotive design and performance for over half a century.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Every vehicle we build embodies our philosophy of continuous innovation, where no detail is too small and no challenge too great.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-trophy text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-1">200+ International Awards</h4>
+                                <p class="text-slate-600">Recognized excellence in design and engineering</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-leaf text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 mb-1">Sustainable Manufacturing</h4>
+                                <p class="text-slate-600">Carbon-neutral production since 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12" data-animate="fade-up">
+                    <h2 class="text-4xl font-bold text-slate-800 mb-4">Experience GP</h2>
+                    <p class="text-lg text-slate-600">
+                        Contact our team to arrange a private viewing or test drive at one of our exclusive locations worldwide.
+                    </p>
+                </div>
+                
+                <form class="bg-white rounded-xl shadow-lg p-8" data-animate="fade-up">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-slate-700 mb-2">Full Name</label>
+                            <input type="text" id="name" class="contact-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-slate-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="contact-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <label for="phone" class="block text-slate-700 mb-2">Phone Number</label>
+                        <input type="tel" id="phone" class="contact-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    </div>
+                    
+                    <div class="mt-6">
+                        <label for="message" class="block text-slate-700 mb-2">Message</label>
+                        <textarea id="message" rows="4" class="contact-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-colors">
+                            Submit Inquiry
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">GP CARS</h3>
+                    <p class="text-slate-400">
+                        Redefining automotive excellence through innovation and craftsmanship.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Models</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">GP Venom</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">GP Titan</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">GP Nova</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white transition-colors">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors text-xl">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors text-xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors text-xl">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-slate-400">
+                <p>© 2023 GP Cars. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

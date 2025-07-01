@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #e11d48;
+            --dark: #1e293b;
+            --light: #f8fafc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(248, 250, 252, 1) 60%);
+            height: 100vh;
+            min-height: 800px;
+        }
+        
+        .hero-content {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .car-image {
+            transform: perspective(1000px) rotateY(-10deg);
+            transition: transform 0.5s ease;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .car-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        
+        .model-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .model-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .counter {
+            transition: all 0.5s ease;
+        }
+        
+        .stats-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        .contact-input {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-input:focus {
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px) rotateY(-10deg); }
+            50% { transform: translateY(-20px) rotateY(-12deg); }
+            100% { transform: translateY(0px) rotateY(-10deg); }
+        }
+        
+        .animate-in {
+            opacity: 0;
+        }
+        
+        .animate-in.show {
+            animation: fadeIn 0.8s forwards;
+        }
+        
+        /* Scroll trigger animations */
+        @media (prefers-reduced-motion: no-preference) {
+            [data-animate] {
+                opacity: 0;
+                transition: opacity 0.8s, transform 0.8s;
+            }
+            
+            [data-animate="fade-up"] {
+                transform: translateY(40px);
+            }
+            
+            [data-animate="fade-left"] {
+                transform: translateX(-40px);
+            }
+            
+            [data-animate="fade-right"] {
+                transform: translateX(40px);
+            }
+            
+            [data-animate].animate {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
